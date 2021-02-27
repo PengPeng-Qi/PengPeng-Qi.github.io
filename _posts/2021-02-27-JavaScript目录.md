@@ -30,7 +30,7 @@ tags:
 * [条件语句](#Switch)  
 * [函数](#function)  
 * [对象](#Object)  
-***
+
 #### <a name="FH">运算符号
 #####  <a name="link"/>目录
 * [除/](#Chu)  
