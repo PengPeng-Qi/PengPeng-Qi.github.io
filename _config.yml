@@ -1,10 +1,10 @@
 # Site settings
-title: PPeng_Blog
-SEOTitle: 漆鹏的博客 | PPeng_Blog
+title: PPeng'Blog
+SEOTitle: 漆鹏的博客 | PPeng'Blog
 header-img: img/Head_pic_long.png
 email: dapeng991120@gmail.com
 description: "Welcome To My Blog"
-keyword: "BY, BY Blog, 漆鹏的博客, PengPeng-Qi, 漆鹏, iOS, Apple, iPhone, 碰碰漆"
+keyword: "PengPengQ, PPeng'Blog, 漆鹏的博客, PengPeng-Qi, 漆鹏, iOS, Apple, iPhone, 碰碰漆"
 url: "https://pengpeng-qi.github.io/"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/qiubaiying/qiubaiying.github.io.git" # you code repository
