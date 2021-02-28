@@ -3,7 +3,7 @@ layout:     post
 title:      Chrome DevTools Notes
 date:       2020-02-27
 author:     PengPengQi
-header-img: img/Chrome_DevTools.jpg
+header-img: img/BackGround.png
 catalog: true
 tags:
     - Chrome
