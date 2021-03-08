@@ -7,7 +7,7 @@ header-img: img/BackGround.png
 catalog: true
 tags:
     - 表单
-    - from
+    - form
     - HTML
     - Notes
 ---
@@ -215,7 +215,7 @@ The list attribute of the `<input>` element, must refer to the `id` attribute of
 <button type="button" onclick="alert('Hello World!')">Click Me!</button>
 ```
 <button type="button" onclick="alert('Hello World!')">Click Me!</button>  
-### <code>&lt;output&gt;</code> Element
+### <code>output</code> Element
 The `<output>` element represents the result of a calculation (like one performed by a script).  
 ```html
 <form action="/action_page.php"
