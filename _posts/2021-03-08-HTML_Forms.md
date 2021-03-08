@@ -14,7 +14,7 @@ tags:
 # HTML 表单
 HTML 表单用于搜集不同类型的用户输入。  
 ## 表单元素
-### <code>&lt;form&gt;</code> 元素
+### <code>form</code> 元素
 ```html
 <form>
  .
@@ -22,11 +22,11 @@ form elements
  .
 </form>
 ```
-### <code>&lt;input&gt;</code> 元素
+### <code>input</code> 元素
 `<input>` 元素有很多形态，根据不同的 type 属性。  
   
 [HTML Input Type](https://www.w3schools.com/html/html_form_input_types.asp)
-### <code>&lt;label&gt;</code>元素
+### <code>label</code>元素
 `<label>`元素定义了几个形式的元素的标签。  
   
 `<label>`元素对屏幕阅读器用户很有用，因为当用户将注意力集中在输入元素上时，屏幕阅读器会大声读出标签。  
@@ -77,7 +77,7 @@ form elements
   <input type="radio" name="gender" id="other" value="other"><br><br>
   <input type="submit" value="Submit">
 </form>
-### <code>&lt;select&gt;</code> 元素(下拉列表)
+### <code>select</code> 元素(下拉列表)
 ```html
 <select name="cars">
 <option value="volvo">Volvo</option>
