@@ -14,7 +14,7 @@ tags:
 # HTML 表单
 HTML 表单用于搜集不同类型的用户输入。  
 ## 表单元素
-### <form> 元素
+### <code>form</code> 元素
 ```html
 <form>
  .
