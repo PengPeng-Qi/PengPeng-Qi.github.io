@@ -14,7 +14,7 @@ tags:
 # HTML 表单
 HTML 表单用于搜集不同类型的用户输入。  
 ## 表单元素
-### `<form>` 元素
+### <form> 元素
 ```html
 <form>
  .
@@ -436,4 +436,38 @@ The `<output>` element represents the result of a calculation (like one performe
     <td>Specifies where to display the response that is received after submitting the form</td>
   </tr>
 </tbody></table>
-更多详情请[见](https://www.w3schools.com/tags/tag_form.asp)
+更多详情请[见](https://www.w3schools.com/tags/tag_form.asp)  
+## HTML Input Types
+<ul>
+  <li><code>&lt;input type="button"&gt;</code></li>
+  <li><code>&lt;input type="checkbox"&gt;</code></li>
+  <li><code>&lt;input type="color"&gt;</code></li>
+  <li><code>&lt;input type="date"&gt;</code></li>
+  <li><code>&lt;input type="datetime-local"&gt;</code></li>
+  <li><code>&lt;input type="email"&gt;</code></li>
+  <li><code>&lt;input type="file"&gt;</code></li>
+  <li><code>&lt;input type="hidden"&gt;</code></li>
+  <li><code>&lt;input type="image"&gt;</code></li>
+  <li><code>&lt;input type="month"&gt;</code></li>
+  <li><code>&lt;input type="number"&gt;</code></li>
+  <li><code>&lt;input type="password"&gt;</code></li>
+  <li><code>&lt;input type="radio"&gt;</code></li>
+  <li><code>&lt;input type="range"&gt;</code></li>
+  <li><code>&lt;input type="reset"&gt;</code></li>
+  <li><code>&lt;input type="search"&gt;</code></li>
+  <li><code>&lt;input type="submit"&gt;</code></li>
+  <li><code>&lt;input type="tel"&gt;</code></li>
+  <li><code>&lt;input type="text"&gt;</code></li>
+  <li><code>&lt;input type="time"&gt;</code></li>
+  <li><code>&lt;input type="url"&gt;</code></li>
+  <li><code>&lt;input type="week"&gt;</code></li>
+</ul>  
+详情请[见](https://www.w3schools.com/html/html_form_input_types.asp)  
+  
+
+
+
+-------
+
+
+持续更新中...
