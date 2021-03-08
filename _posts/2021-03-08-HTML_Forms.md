@@ -195,8 +195,8 @@ The list attribute of the `<input>` element, must refer to the `id` attribute of
     <option value="Opera">
     <option value="Safari">
   </datalist>
-</form>
-```
+</form>  
+```  
 <form action="/action_page.php">
   <input list="browsers">
   <datalist id="browsers">
@@ -206,8 +206,8 @@ The list attribute of the `<input>` element, must refer to the `id` attribute of
     <option value="Opera">
     <option value="Safari">
   </datalist>
-</form>
-```
+</form>  
+  
 ### <code>button</code> 元素
 `<button>` 元素定义可点击的按钮：
 ```html
