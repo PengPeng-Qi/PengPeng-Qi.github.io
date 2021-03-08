@@ -25,12 +25,10 @@ form elements
 ### <code>input</code> 元素
 `<input>` 元素有很多形态，根据不同的 type 属性。  
   
-[HTML Input Type](https://www.w3schools.com/html/html_form_input_types.asp)
+[HTML Input Type](#HTML_Input_Types)
 ### <code>label</code>元素
 `<label>`元素定义了几个形式的元素的标签。  
-  
 `<label>`元素对屏幕阅读器用户很有用，因为当用户将注意力集中在输入元素上时，屏幕阅读器会大声读出标签。  
-  
 `<label>`元素还可以帮助难以单击很小区域（例如单选按钮或复选框）的用户-因为当用户单击`<label>`元素内的文本时，它会切换单选按钮/复选框。  
   
 标签的`for`属性`<label>`应等于 将它们绑定在一起`id`的`<input>`元素的属性  
@@ -215,7 +213,7 @@ The list attribute of the `<input>` element, must refer to the `id` attribute of
 <button type="button" onclick="alert('Hello World!')">Click Me!</button>
 ```
 <button type="button" onclick="alert('Hello World!')">Click Me!</button>  
-### <code>output</code> Element
+### <code>output</code> 属性
 The `<output>` element represents the result of a calculation (like one performed by a script).  
 ```html
 <form action="/action_page.php"
@@ -311,7 +309,8 @@ The `<output>` element represents the result of a calculation (like one performe
   <input type="submit" value="Submit">
 </form>  
 ```
-> 如果action省略该属性，则将操作设置为当前页面。
+> 如果action省略该属性，则将操作设置为当前页面。  
+  
 ### <code>target</code> 属性
 该`target`属性指定提交表单后在何处显示收到的响应。  
 <table notranslate"> 
@@ -437,9 +436,10 @@ The `<output>` element represents the result of a calculation (like one performe
       _top</td>
     <td>Specifies where to display the response that is received after submitting the form</td>
   </tr>
-</tbody></table>
+</tbody></table>  
 更多详情请[见](https://www.w3schools.com/tags/tag_form.asp)  
-## HTML Input Types
+  
+## <a name="HTML_Input_Types">HTML Input Types
 <ul>
   <li><code>&lt;input type="button"&gt;</code></li>
   <li><code>&lt;input type="checkbox"&gt;</code></li>
