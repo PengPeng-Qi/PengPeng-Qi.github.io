@@ -370,7 +370,7 @@ The `<output>` element represents the result of a calculation (like one performe
   
 > 如果表单数据包含敏感信息或个人信息，请始终使用POST！
 
-### <code>&lt;autocompete&gt;</code> 属性
+### <code>autocompete</code> 属性
 该`autocomplete`属性指定表单是应该打开还是关闭自动完成功能。  
   
 启用自动完成功能后，浏览器会根据用户之前输入的值自动完成值。  
