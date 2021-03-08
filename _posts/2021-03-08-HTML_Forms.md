@@ -180,7 +180,7 @@ The `<legend>` element defines a caption for the `<fieldset>` element.
     <input type="text" id="lname" name="lname" value="Doe"><br><br>
     <input type="submit" value="Submit">
   </fieldset>
-</form>
+</form>  
 ### `<datalist>` 元素
 The `<datalist>` element specifies a list of pre-defined options for an `<input>` element.  
   
@@ -212,7 +212,7 @@ The list attribute of the `<input>` element, must refer to the `id` attribute of
 ```html
 <button type="button" onclick="alert('Hello World!')">Click Me!</button>
 ```
-<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+<button type="button" onclick="alert('Hello World!')">Click Me!</button>  
 ### `<output>` Element
 The `<output>` element represents the result of a calculation (like one performed by a script).  
 ```html
