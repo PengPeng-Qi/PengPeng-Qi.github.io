@@ -14,7 +14,7 @@ tags:
 # HTML 表单
 HTML 表单用于搜集不同类型的用户输入。  
 ## 表单元素
-### <code>form</code> 元素
+### <code>&lt;form&gt;</code> 元素
 ```html
 <form>
  .
@@ -22,11 +22,11 @@ form elements
  .
 </form>
 ```
-### `<input>` 元素
+### <code>&lt;input&gt;</code> 元素
 `<input>` 元素有很多形态，根据不同的 type 属性。  
   
 [HTML Input Type](https://www.w3schools.com/html/html_form_input_types.asp)
-### `<label>`元素
+### <code>&lt;label&gt;</code>元素
 `<label>`元素定义了几个形式的元素的标签。  
   
 `<label>`元素对屏幕阅读器用户很有用，因为当用户将注意力集中在输入元素上时，屏幕阅读器会大声读出标签。  
@@ -77,7 +77,7 @@ form elements
   <input type="radio" name="gender" id="other" value="other"><br><br>
   <input type="submit" value="Submit">
 </form>
-### `<select>` 元素(下拉列表)
+### <code>&lt;select&gt;</code> 元素(下拉列表)
 ```html
 <select name="cars">
 <option value="volvo">Volvo</option>
@@ -92,7 +92,7 @@ form elements
 <option value="fiat">Fiat</option>
 <option value="audi">Audi</option>
 </select>
-### `<option>`元素
+### <code>&lt;option&gt;</code>元素
 列表通常会把首个选项显示为被选选项。  
   
 您能够通过添加 selected 属性来定义预定义选项。  
@@ -110,8 +110,8 @@ form elements
   </select>
   <input type="submit">
 </form>
-#### size属性
-使用`size`属性指定可见值的数量：
+#### <code>&lt;size&gt;</code>属性
+用`size`属性指定可见值的数量：
 ```html
 <label for="cars">Choose a car:</label>
 <select id="cars" name="cars" size="3">
@@ -128,7 +128,7 @@ form elements
   <option value="fiat">Fiat</option>
   <option value="audi">Audi</option>
 </select>
-#### multiple属性
+#### <code>&lt;multiple&gt;</code>属性
 ```html
 <label for="cars">Choose a car:</label>
 <select id="cars" name="cars" size="4" multiple>
@@ -145,7 +145,7 @@ form elements
   <option value="fiat">Fiat</option>
   <option value="audi">Audi</option>
 </select>
-### `<textarea>`元素
+### <code>&lt;textarea&gt;</code> 元素
 `<textarea>`元素限定了多行输入字段（文本区域）  
 ```html
 <textarea name="message" rows="10" cols="30">
@@ -155,7 +155,7 @@ The cat was playing in the garden.
 <textarea name="message" rows="10" cols="30">
 The cat was playing in the garden.
 </textarea>
-### `<fieldset>` and `<legend>` Elements
+### <code>&lt;fieldset&gt;</code> and <code>&lt;legend&gt;</code> Elements
 The `<fieldset>` element is used to group related data in a form.  
   
 The `<legend>` element defines a caption for the `<fieldset>` element.  
@@ -181,7 +181,7 @@ The `<legend>` element defines a caption for the `<fieldset>` element.
     <input type="submit" value="Submit">
   </fieldset>
 </form>  
-### `<datalist>` 元素
+### <code>&lt;datalist&gt;</code> 元素
 The `<datalist>` element specifies a list of pre-defined options for an `<input>` element.  
   
 The list attribute of the `<input>` element, must refer to the `id` attribute of the `<datalist>` element.
@@ -207,13 +207,14 @@ The list attribute of the `<input>` element, must refer to the `id` attribute of
     <option value="Safari">
   </datalist>
 </form>
-### `<button>` 元素
+```
+### <code>&lt;button&gt;</code> 元素
 `<button>` 元素定义可点击的按钮：
 ```html
 <button type="button" onclick="alert('Hello World!')">Click Me!</button>
 ```
 <button type="button" onclick="alert('Hello World!')">Click Me!</button>  
-### `<output>` Element
+### <code>&lt;output&gt;</code> Element
 The `<output>` element represents the result of a calculation (like one performed by a script).  
 ```html
 <form action="/action_page.php"
@@ -239,7 +240,7 @@ The `<output>` element represents the result of a calculation (like one performe
   <br><br>
   <input type="submit">
 </form>
-### HTML Form Elements
+### <code>&lt;HTML Form&gt;</code> Elements
 <table class="w3-table-all notranslate">
 <tbody><tr>
 <th>Tag</th>
@@ -295,7 +296,7 @@ The `<output>` element represents the result of a calculation (like one performe
 </tr>
 </tbody></table>
 ## 表单属性
-### `action`属性
+### <code>&lt;action&gt;</code> 属性
 该`action`属性定义提交表单时要执行的操作。  
 通常，当用户单击“提交”按钮时，表单数据将发送到服务器上的文件中。  
 在下面的示例中，表单数据被发送到名为“ action_page.php”的文件。此文件包含处理表单数据的服务器端脚本：  
@@ -310,7 +311,7 @@ The `<output>` element represents the result of a calculation (like one performe
 </form>
 ```
 > 如果action省略该属性，则将操作设置为当前页面。
-### `target`属性
+### <code>&lt;target&gt;</code> 属性
 该`target`属性指定提交表单后在何处显示收到的响应。  
 <table notranslate"> 
   <tbody>
@@ -343,7 +344,7 @@ The `<output>` element represents the result of a calculation (like one performe
 ```html
 <form action="/action_page.php" method="get">
 ```
-### `method`属性
+### <code>&lt;method&gt;</code> 属性
 该`method`属性指定提交表单数据时要使用的HTTP方法。  
   
 表单数据可以作为URL变量（带有`method="get"`）或作为HTTP发布交易记录（带有`method="post"`）发送。  
@@ -368,7 +369,7 @@ The `<output>` element represents the result of a calculation (like one performe
   
 > 如果表单数据包含敏感信息或个人信息，请始终使用POST！
 
-### `autocomplete`属性
+### <code>&lt;autocompete&gt;</code> 属性
 该`autocomplete`属性指定表单是应该打开还是关闭自动完成功能。  
   
 启用自动完成功能后，浏览器会根据用户之前输入的值自动完成值。  
