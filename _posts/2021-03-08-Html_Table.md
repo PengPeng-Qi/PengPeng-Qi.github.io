@@ -325,6 +325,59 @@ table {
     <td>$53</td>
   </tr>
 </table>
+## scope属性
+`scope`属性指定标题单元格是列，行还是一组列或行的标题。该scope属性在普通的Web浏览器中没有视觉效果，但是可以由屏幕阅读器使用。
+```html
+<table>
+  <tr>
+    <th></th>
+    <th scope="col">Month</th>
+    <th scope="col">Savings</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>February</td>
+    <td>$80</td>
+  </tr>
+</table>
+```
+语法：
+```html
+<th scope="col|row|colgroup|rowgroup">
+```
+如果要替代 scope 属性，可以使用 id 和 headers 属性来创造标题与单元格之间的联系。使用方法如下:  
+  
+* 为每个`<th>` 元素添加一个唯一的 id 。  
+* 为每个 `<td>` 元素添加一个 headers 属性。每个单元格的headers 属性需要包含它从属于的所有标题的id，之间用空格分隔开。  
+  
+```html
+<thead>
+  <tr>
+    <th id="purchase">Purchase</th>
+    <th id="location">Location</th>
+    <th id="date">Date</th>
+    <th id="evaluation">Evaluation</th>
+    <th id="cost">Cost (€)</th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <th id="haircut">Haircut</th>
+  <td headers="location haircut">Hairdresser</td>
+  <td headers="date haircut">12/09</td>
+  <td headers="evaluation haircut">Great idea</td>
+  <td headers="cost haircut">30</td>
+</tr>
+
+  ...
+
+</tbody>
+```
 
 ----
 
