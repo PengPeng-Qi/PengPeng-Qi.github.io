@@ -375,6 +375,54 @@ table {
 
 </tbody>
 ```
+## HTML Table Tags
+<table>
+<tbody>
+<tr>
+<th>Tag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>&lt;table&gt;</td>
+<td>Defines a table</td>
+</tr>
+<tr>
+<td>&lt;th&gt;</td>
+<td>Defines a header cell in a table</td>
+</tr>
+<tr>
+<td>&lt;tr&gt;</td>
+<td>Defines a row in a table</td>
+</tr>
+<tr>
+<td>&lt;td&gt;</td>
+<td>Defines a cell in a table</td>
+</tr>
+<tr>
+<td>&lt;caption&gt;</td>
+<td>Defines a table caption</td>
+</tr>
+<tr>
+<td>&lt;colgroup&gt;</td>
+<td>Specifies a group of one or more columns in a table for formatting</td>
+</tr>
+<tr>
+<td>&lt;col&gt;</td>
+<td>Specifies column properties for each column within a &lt;colgroup&gt; element</td>
+</tr>
+<tr>
+<td>&lt;thead&gt;</td>
+<td>Groups the header content in a table</td>
+</tr>
+<tr>
+<td>&lt;tbody&gt;</td>
+<td>Groups the body content in a table</td>
+</tr>
+<tr>
+<td>&lt;tfoot&gt;</td>
+<td>Groups the footer content in a table</td>
+</tr>
+</tbody></table>
 
 ----
 
