@@ -388,7 +388,6 @@ table {
   background-color: black;
 }
 ```
-<!DOCTYPE html>
 <html>
 <head>
 <style>
@@ -444,19 +443,25 @@ th, td {
 
 <dl>
  <dt><code>tr:nth-child(2n+1)</code></dt>
- <dd>表示HTML表格中的奇数行。</dd>
+ <dd>  --表示HTML表格中的奇数行。</dd>
+ <hr>
  <dt><code>tr:nth-child(odd)</code></dt>
- <dd>表示HTML表格中的奇数行。</dd>
+ <dd>  --表示HTML表格中的奇数行。</dd>
+ <hr>
  <dt><code>tr:nth-child(2n)</code></dt>
- <dd>表示HTML表格中的偶数行。</dd>
+ <dd>  --表示HTML表格中的偶数行。</dd>
+ <hr>
  <dt><code>tr:nth-child(even)</code></dt>
- <dd>表示HTML表格中的偶数行。</dd>
+ <dd>  --表示HTML表格中的偶数行。</dd>
+ <hr>
  <dt><code>span:nth-child(0n+1)</code></dt>
- <dd>表示子元素中第一个且为span的元素，与&nbsp;<span style="background-color: #ffffff; color: #4d4e53; font-family: open sans,arial,sans-serif; font-size: 14px; line-height: 21px;"><a href="/zh-CN/docs/Web/CSS/:first-child"><code>:first-child</code></a>&nbsp;</span>选择器作用相同。</dd>
+ <dd>  --表示子元素中第一个且为span的元素，与&nbsp;<span style="background-color: #ffffff; color: #4d4e53; font-family: open sans,arial,sans-serif; font-size: 14px; line-height: 21px;"><a href="/zh-CN/docs/Web/CSS/:first-child"><code>:first-child</code></a>&nbsp;</span>选择器作用相同。</dd>
+ <hr>
  <dt><code>span:nth-child(1)</code></dt>
- <dd>表示父元素中子元素为第一的并且名字为span的标签被选中</dd>
+ <dd>  --表示父元素中子元素为第一的并且名字为span的标签被选中</dd>
+ <hr>
  <dt><code>span:nth-child(-n+3)</code></dt>
- <dd>匹配前三个子元素中的span元素。</dd>
+ <dd>  --匹配前三个子元素中的span元素。</dd>
 </dl>
 ## HTML Table Tags
 <table>
