@@ -151,7 +151,6 @@ table, th, td {
 </head>
 <body>
 
-<h2>Collapsed Borders</h2>
 <p>If you want the borders to collapse into one border, add the CSS border-collapse property.</p>
 
 <table style="width:100%">
@@ -179,7 +178,8 @@ table, th, td {
 
 </body>
 </html>
-> 由于显示问题，详细视图请[见](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_border)
+> 由于显示问题，详细视图请[见](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_border)  
+
 ## 塌陷的边框
 要使边框折叠成一个边框，请添加CSS `border-collapse` 属性：
 ```css
@@ -199,7 +199,6 @@ table, th, td {
 </head>
 <body>
 
-<h2>Collapsed Borders</h2>
 <p>If you want the borders to collapse into one border, add the CSS border-collapse property.</p>
 
 <table style="width:100%">
@@ -247,8 +246,6 @@ th, td {
 </style>
 </head>
 <body>
-
-<h2>Cellpadding</h2>
 <p>Cell padding specifies the space between the cell content and its borders.</p>
 
 <table style="width:100%">
