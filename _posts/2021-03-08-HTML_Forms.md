@@ -22,6 +22,20 @@ form elements
  .
 </form>
 ```
+<p>The HTML <code>&lt;form&gt;</code> element can contain one or more of the following form elements:</p>
+<ul>
+<li> <code>&lt;input&gt;</code></li>
+  <li> <code>&lt;label&gt;</code></li>
+  <li> <code>&lt;select&gt;</code></li>
+<li> <code>&lt;textarea&gt;</code></li>
+<li> <code>&lt;button&gt;</code></li>
+<li> <code>&lt;fieldset&gt;</code></li>
+  <li> <code>&lt;legend&gt;</code></li>
+  <li> <code>&lt;datalist&gt;</code></li>
+  <li> <code>&lt;output&gt;</code></li>
+<li> <code>&lt;option&gt;</code></li>
+<li> <code>&lt;optgroup&gt;</code></li>
+</ul>
 ### <code>input</code> 元素
 `<input>` 元素有很多形态，根据不同的 type 属性。  
   
@@ -31,7 +45,7 @@ form elements
 `<label>`元素对屏幕阅读器用户很有用，因为当用户将注意力集中在输入元素上时，屏幕阅读器会大声读出标签。  
 `<label>`元素还可以帮助难以单击很小区域（例如单选按钮或复选框）的用户-因为当用户单击`<label>`元素内的文本时，它会切换单选按钮/复选框。  
   
-标签的`for`属性`<label>`应等于 将它们绑定在一起`id`的`<input>`元素的属性  
+标签的`for`属性`<label>`应等于将它们绑定在一起`id`的`<input>`元素的属性  
 ```html
 <form action="/action_page.php">
   <label for="cars">Choose a car:</label>
@@ -55,26 +69,6 @@ form elements
   <input type="submit">
 </form>
 <hr>
-```html
-<form action="/action_page.php">
-  <label for="male">Male</label>
-  <input type="radio" name="gender" id="male" value="male"><br>
-  <label for="female">Female</label>
-  <input type="radio" name="gender" id="female" value="female"><br>
-  <label for="other">Other</label>
-  <input type="radio" name="gender" id="other" value="other"><br><br>
-  <input type="submit" value="Submit">
-</form>
-```
-<form action="/action_page.php">
-  <label for="male">Male</label>
-  <input type="radio" name="gender" id="male" value="male"><br>
-  <label for="female">Female</label>
-  <input type="radio" name="gender" id="female" value="female"><br>
-  <label for="other">Other</label>
-  <input type="radio" name="gender" id="other" value="other"><br><br>
-  <input type="submit" value="Submit">
-</form>
 ### <code>select</code> 元素(下拉列表)
 ```html
 <select name="cars">
@@ -179,6 +173,7 @@ The `<legend>` element defines a caption for the `<fieldset>` element.
     <input type="submit" value="Submit">
   </fieldset>
 </form>  
+
 ### <code>datalist</code> 元素
 The `<datalist>` element specifies a list of pre-defined options for an `<input>` element.  
   
@@ -294,12 +289,10 @@ The `<output>` element represents the result of a calculation (like one performe
 <td>Defines the result of a calculation</td>
 </tr>
 </tbody></table>
+
 ## 表单属性
-### <code>action</code> 属性
-该`action`属性定义提交表单时要执行的操作。  
-通常，当用户单击“提交”按钮时，表单数据将发送到服务器上的文件中。  
-在下面的示例中，表单数据被发送到名为“ action_page.php”的文件。此文件包含处理表单数据的服务器端脚本：  
-  
+### The Action Attribute
+The <code>action</code> attribute defines the action to be performed when the form is submitted.
 ```html
 <form action="/action_page.php">
   <label for="fname">First name:</label><br>
@@ -307,11 +300,18 @@ The `<output>` element represents the result of a calculation (like one performe
   <label for="lname">Last name:</label><br>
   <input type="text" id="lname" name="lname" value="Doe"><br><br>
   <input type="submit" value="Submit">
-</form>  
+</form>
 ```
-> 如果action省略该属性，则将操作设置为当前页面。  
-  
-### <code>target</code> 属性
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+> Tip: If the action attribute is omitted(省略), the action is set to the current page.
+
+### The Target Attribute
 该`target`属性指定提交表单后在何处显示收到的响应。  
   
 <table notranslate> 
@@ -346,7 +346,7 @@ The `<output>` element represents the result of a calculation (like one performe
 ```html
 <form action="/action_page.php" method="get">
 ```
-### <code>method</code> 属性
+### The Method Attribute
 该`method`属性指定提交表单数据时要使用的HTTP方法。  
   
 表单数据可以作为URL变量（带有`method="get"`）或作为HTTP发布交易记录（带有`method="post"`）发送。  
@@ -371,12 +371,19 @@ The `<output>` element represents the result of a calculation (like one performe
   
 > 如果表单数据包含敏感信息或个人信息，请始终使用POST！
 
-### <code>autocompete</code> 属性
+### The Autocomplete Attribute
 该`autocomplete`属性指定表单是应该打开还是关闭自动完成功能。  
   
 启用自动完成功能后，浏览器会根据用户之前输入的值自动完成值。  
 ```html
 <form action="/action_page.php" autocomplete="on">
+```
+### The Novalidate Attribute
+The `novalidate` attribute is a boolean attribute.  
+  
+When present, it specifies that the form-data (input) should not be validated when submitted.  
+```html
+<form action="/action_page.php" novalidate>
 ```
 ### 其他属性
 <table>
@@ -467,9 +474,156 @@ The `<output>` element represents the result of a calculation (like one performe
   <li><code>&lt;input type="week"&gt;</code></li>
 </ul>  
 详情请[见](https://www.w3schools.com/html/html_form_input_types.asp)  
-  
+### Input Type Text
+`<input type="text">` defines a single-line text input field:  
+```html
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">
+</form>
+```
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">
+</form>
+### Input Type Password
+`<input type="password">` defines a password field:  
+```html
+<form>
+  <label for="username">Username:</label><br>
+  <input type="text" id="username" name="username"><br>
+  <label for="pwd">Password:</label><br>
+  <input type="password" id="pwd" name="pwd">
+</form>
+```
+<form>
+  <label for="username">Username:</label><br>
+  <input type="text" id="username" name="username"><br>
+  <label for="pwd">Password:</label><br>
+  <input type="password" id="pwd" name="pwd">
+</form>
+### Input Type Submit
+`<input type="submit">` defines a button for submitting form data to a form-handler.  
+```html
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+```
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+### Input Type Reset
+`<input type="reset">` defines a reset button that will reset all form values to their default values:  
+```html
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+  <input type="reset">
+</form>
+```
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+  <input type="reset">
+</form>
+### Radio Buttons
+The `<input type="radio">` defines a radio button.
+```html
+<form action="/action_page.php">
+  <label for="male">Male</label>
+  <input type="radio" name="gender" id="male" value="male"><br>
+  <label for="female">Female</label>
+  <input type="radio" name="gender" id="female" value="female"><br>
+  <label for="other">Other</label>
+  <input type="radio" name="gender" id="other" value="other"><br><br>
+  <input type="submit" value="Submit">
+</form>
+```
+<form action="/action_page.php">
+  <label for="male">Male</label>
+  <input type="radio" name="gender" id="male" value="male"><br>
+  <label for="female">Female</label>
+  <input type="radio" name="gender" id="female" value="female"><br>
+  <label for="other">Other</label>
+  <input type="radio" name="gender" id="other" value="other"><br><br>
+  <input type="submit" value="Submit">
+</form>
 
+### Checkboxes
+The `<input type="checkbox">` defines a checkbox.
+```html
+<form>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a boat</label>
+</form>
+```
+<form>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a boat</label>
+</form>
+### Input Type Button
+`<input type="button">` defines a button:  
+```html
+<input type="button" onclick="alert('Hello World!')" value="Click Me!">
+```
+<input type="button" onclick="alert('Hello World!')" value="Click Me!">
+### Input Type Color
+The `<input type="color">` is used for input fields that should contain a color.  
+```html
+<form>
+  <label for="favcolor">Select your favorite color:</label>
+  <input type="color" id="favcolor" name="favcolor">
+</form>
+```
+<form>
+  <label for="favcolor">Select your favorite color:</label>
+  <input type="color" id="favcolor" name="favcolor">
+</form>
 
+### The Submit Button
+The `<input type="submit">` defines a button for submitting the form data to a form-handler.
+```html
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+```
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
 
 -------
 
