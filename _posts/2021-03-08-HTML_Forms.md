@@ -606,24 +606,6 @@ The `<input type="color">` is used for input fields that should contain a color.
   <input type="color" id="favcolor" name="favcolor">
 </form>
 
-### The Submit Button
-The `<input type="submit">` defines a button for submitting the form data to a form-handler.
-```html
-<form action="/action_page.php">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br><br>
-  <input type="submit" value="Submit">
-</form>
-```
-<form action="/action_page.php">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br><br>
-  <input type="submit" value="Submit">
-</form>
 
 -------
 
