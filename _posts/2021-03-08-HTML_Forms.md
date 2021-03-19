@@ -605,7 +605,236 @@ The `<input type="color">` is used for input fields that should contain a color.
   <label for="favcolor">Select your favorite color:</label>
   <input type="color" id="favcolor" name="favcolor">
 </form>
+### Input Type Date
+The `<input type="date">` is used for input fields that should contain a date.  
+  
+```html
+<form>
+  <label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday">
+</form>
+```
+<form>
+  <label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday">
+</form>
+You can also use the `min` and `max` attributes to add restrictions to dates:  
+  
+```html
+<form>
+  <label for="datemax">Enter a date before 1980-01-01:</label>
+  <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+  <label for="datemin">Enter a date after 2000-01-01:</label>
+  <input type="date" id="datemin" name="datemin" min="2000-01-02">
+</form>
+```
+<form>
+  <label for="datemax">Enter a date before 1980-01-01:</label>
+  <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+  <label for="datemin">Enter a date after 2000-01-01:</label>
+  <input type="date" id="datemin" name="datemin" min="2000-01-02">
+</form>
+### Input Type Datetime-local
+The `<input type="datetime-local">` specifies a date and time input field, with no time zone.  
+  
+```html
+<form>
+  <label for="birthdaytime">Birthday (date and time):</label>
+  <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+</form>
+```
+<form>
+  <label for="birthdaytime">Birthday (date and time):</label>
+  <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+</form>
+### Input Type Email
+The `<input type="email">` is used for input fields that should contain an e-mail address.  
+  
+```html
+<form>
+  <label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email">
+</form>
+```
+<form>
+  <label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email">
+</form>
+### Input Type File
+The `<input type="file">` defines a file-select field and a "Browse" button for file uploads.  
+  
+```html
+<form>
+  <label for="myfile">Select a file:</label>
+  <input type="file" id="myfile" name="myfile">
+</form>
+```
+<form>
+  <label for="myfile">Select a file:</label>
+  <input type="file" id="myfile" name="myfile">
+</form>
+### Input Type Month
+The `<input type="month">` allows the user to select a month and year.  
+  
+```html
+<form>
+  <label for="bdaymonth">Birthday (month and year):</label>
+  <input type="month" id="bdaymonth" name="bdaymonth">
+</form>
+```
+<form>
+  <label for="bdaymonth">Birthday (month and year):</label>
+  <input type="month" id="bdaymonth" name="bdaymonth">
+</form>
+### Input Type Number
+The `<input type="number">` defines a numeric input field.  
+  
+```html
+<form>
+  <label for="quantity">Quantity (between 1 and 5):</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="5">
+</form>
+```
+<form>
+  <label for="quantity">Quantity (between 1 and 5):</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="5">
+</form>
+### Input Restrictions
+Here is a list of some common input restrictions:
+<table>
+<tbody><tr>
+<th>属性</th>
+<th>描述</th>
+</tr>
 
+<tr>
+<td>disabled</td>
+<td>规定输入字段应该被禁用。</td>
+</tr>
+
+<tr>
+<td>max</td>
+<td>规定输入字段的最大值。</td>
+</tr>
+
+<tr>
+<td>maxlength</td>
+<td>规定输入字段的最大字符数。</td>
+</tr>
+
+<tr>
+<td>min</td>
+<td>规定输入字段的最小值。</td>
+</tr>
+
+<tr>
+<td>pattern</td>
+<td>规定通过其检查输入值的正则表达式。</td>
+</tr>
+
+<tr>
+<td>readonly</td>
+<td>规定输入字段为只读（无法修改）。</td>
+</tr>
+
+<tr>
+<td>required</td>
+<td>规定输入字段是必需的（必需填写）。</td>
+</tr>
+
+<tr>
+<td>size</td>
+<td>规定输入字段的宽度（以字符计）。</td>
+</tr>
+
+<tr>
+<td>step</td>
+<td>规定输入字段的合法数字间隔。</td>
+</tr>
+
+<tr>
+<td>value</td>
+<td>规定输入字段的默认值。</td>
+</tr>
+</tbody></table>
+### Input Type Range
+The `<input type="range">` defines a control for entering a number whose exact value is not important (like a slider control).   
+  
+```html
+<form>
+  <label for="vol">Volume (between 0 and 50):</label>
+  <input type="range" id="vol" name="vol" min="0" max="50">
+</form>
+```
+<form>
+  <label for="vol">Volume (between 0 and 50):</label>
+  <input type="range" id="vol" name="vol" min="0" max="50">
+</form>
+### Input Type Search
+The `<input type="search">` is used for search fields (a search field behaves like a regular text field).  
+  
+```html
+<form>
+  <label for="gsearch">Search Google:</label>
+  <input type="search" id="gsearch" name="gsearch">
+</form>
+```
+<form>
+  <label for="gsearch">Search Google:</label>
+  <input type="search" id="gsearch" name="gsearch">
+</form>
+### Input Type Tel
+The `<input type="tel">` is used for input fields that should contain a telephone number.  
+  
+```html
+<form>
+  <label for="phone">Enter your phone number:</label>
+  <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+</form>
+```
+<form>
+  <label for="phone">Enter your phone number:</label>
+  <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+</form>
+### Input Type Time
+The `<input type="time">` allows the user to select a time (no time zone).  
+  
+```html
+<form>
+  <label for="appt">Select a time:</label>
+  <input type="time" id="appt" name="appt">
+</form>
+```
+<form>
+  <label for="appt">Select a time:</label>
+  <input type="time" id="appt" name="appt">
+</form>
+### Input Type Url
+The `<input type="url">` is used for input fields that should contain a URL address.  
+  
+```html
+<form>
+  <label for="homepage">Add your homepage:</label>
+  <input type="url" id="homepage" name="homepage">
+</form>
+```
+<form>
+  <label for="homepage">Add your homepage:</label>
+  <input type="url" id="homepage" name="homepage">
+</form>
+### Input Type Week
+The `<input type="week">` allows the user to select a week and year.  
+  
+```html
+<form>
+  <label for="week">Select a week:</label>
+  <input type="week" id="week" name="week">
+</form>
+```
+<form>
+  <label for="week">Select a week:</label>
+  <input type="week" id="week" name="week">
+</form>
 
 -------
 
