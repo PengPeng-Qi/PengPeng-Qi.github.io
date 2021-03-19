@@ -385,7 +385,7 @@ When present, it specifies that the form-data (input) should not be validated wh
 ```html
 <form action="/action_page.php" novalidate>
 ```
-### 其他属性
+### Others Attribute
 <table>
   <tbody><tr>
     <th style="width:20%">Attribute</th>
@@ -448,7 +448,7 @@ When present, it specifies that the form-data (input) should not be validated wh
 </tbody></table>  
 更多详情请[见](https://www.w3schools.com/tags/tag_form.asp)  
   
-## <a name="HTML_Input_Types">HTML Input Types
+## <a name="HTML_Input_Types">HTML Input 类型
 <ul>
   <li><code>&lt;input type="button"&gt;</code></li>
   <li><code>&lt;input type="checkbox"&gt;</code></li>
