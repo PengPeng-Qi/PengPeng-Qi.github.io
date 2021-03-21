@@ -373,8 +373,6 @@ p.one {
 </style>
 </head>
 <body>
-
-<h2>Individual Border Sides</h2>
 <p class="four">4 different border styles.</p>
 <p class="three">3 different border styles.</p>
 <p class="two">2 different border styles.</p>
@@ -434,8 +432,6 @@ p.round3 {
 </style>
 </head>
 <body>
-
-<h2>The border-radius Property</h2>
 <p>This property is used to add rounded borders to an element:</p>
 
 <p class="normal">Normal border</p>
