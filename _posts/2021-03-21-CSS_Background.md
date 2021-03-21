@@ -34,8 +34,8 @@ The <b>opacity</b> property specifies the opacity/transparency of an element. It
   
 ```css
 div {
-  background-color: green;
-  opacity: 0.3;
+    background-color: green;
+    opacity: 0.3;
 }
 ```
 ### Transparency using RGBA
@@ -43,13 +43,13 @@ If you do not want to apply opacity to child elements, like in our example above
   
 ```css
 div {
-  background: rgba(0, 128, 0, 0.3) /* Green background with 30% opacity */
+    background: rgba(0, 128, 0, 0.3) /* Green background with 30% opacity */
 }
 ```
 ### CSS Background Image
 ```css
 body {
-  background-image: url("paper.gif");
+    background-image: url("paper.gif");
 }
 ```
 ### repeat 属性 
@@ -58,11 +58,12 @@ body {
   
 ```css
 body {
-    background-image:url('gradient2.png');
-    background-repeat:repeat-x;
+    background-image:url('gradient2.png');
+    background-repeat:repeat-x;
 }
 /* 如果设置图像不平铺 */
 body {
+    background-image:url('gradient2.png');
     background-repeat:no-repeat;
 }
 ```
@@ -77,24 +78,21 @@ body {
 ### CSS Background Attachment
 ```css
 body {
-  background-image: url("img_tree.png");
-  background-repeat: no-repeat;
-  background-position: right top;
-  background-attachment: scroll;
+    background-image: url("img_tree.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: scroll;
 }
 ```
 更多例子可[见](https://developer.mozilla.org/zh-CN/docs/Web/CSS/background-attachment)  
 取值：
 <dl>
  <dt><code>fixed</code></dt>
- <dd>此关键属性值表示背景相对于视口固定。即使一个元素拥有滚动机制，背景也不会随着元素的内容滚动。</dd>
+ <dd>   此关键属性值表示背景相对于视口固定。即使一个元素拥有滚动机制，背景也不会随着元素的内容滚动。</dd>
  <dt><code>local</code></dt>
- <dd>此关键属性值表示背景相对于元素的内容固定。如果一个元素拥有滚动机制，背景将会随着元素的内容滚动， 并且背景的绘制区域和定位区域是相对于可滚动的区域而不是包含他们的边框。</dd>
+ <dd>   此关键属性值表示背景相对于元素的内容固定。如果一个元素拥有滚动机制，背景将会随着元素的内容滚动， 并且背景的绘制区域和定位区域是相对于可滚动的区域而不是包含他们的边框。</dd>
  <dt><code>scroll</code></dt>
- <dd>此关键属性值表示背景相对于元素本身固定， 而不是随着它的内容滚动（对元素边框是有效的）。</dd>
- <dt>
- <h3 id="标准语法" style="font-size: 1.71428571428571rem;">标准语法</h3>
- </dt>
+ <dd>   此关键属性值表示背景相对于元素本身固定， 而不是随着它的内容滚动（对元素边框是有效的）。</dd>
 </dl>
 ### CSS Background Shorthand
 ```css
