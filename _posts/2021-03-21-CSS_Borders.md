@@ -59,7 +59,6 @@ p.mix {border-style: dotted dashed solid double;}
 
 </body>
 </html>
-<!--
 ### CSS Border Width
 The `border-width` property specifies the width of the four borders.  
   
@@ -141,6 +140,7 @@ p.six {
 Always specify the "border-style" property to set the borders first.</p>
 </body>
 </html>
+<!--
 The `border-width` property can have from one to four values (for the top border, right border, bottom border, and the left border):  
 ```css
 p.one {
