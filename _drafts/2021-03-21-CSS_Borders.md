@@ -11,6 +11,7 @@ tags:
     - Borders
     - Notes
 ---
+<!--
 ## CSS Border Style
 The `border-style` property specifies what kind of border to display.  
 ```css
@@ -247,7 +248,6 @@ p.three {
 
 </body>
 </html>
-<!--
 ### Specific Side Colors
 The `border-color` property can have from one to four values (for the top border, right border, bottom border, and the left border).   
   
