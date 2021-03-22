@@ -140,7 +140,7 @@ p.six {
 Always specify the "border-style" property to set the borders first.</p>
 </body>
 </html>
-  
+<hr>  
 The `border-width` property can have from one to four values (for the top border, right border, bottom border, and the left border):  
 ```css
 p.one {
@@ -188,7 +188,6 @@ p.three {
 
 </body>
 </html>
-<!--
 ### CSS Border Color
 The `border-color` property is used to set the color of the four borders.  
   
@@ -216,6 +215,7 @@ p.three {
   border-color: blue;
 }
 ```
+
 <html>
 <head>
 <style>
@@ -243,10 +243,11 @@ p.three {
 <p class="two">A solid green border</p>
 <p class="three">A dotted blue border</p>
 
-<p><b>Note:</b> The `border-color` property does not work if it is used alone. Use the "border-style" property to set the borders first.</p>
+<p><b>Note:</b> The <b>border-color</b> property does not work if it is used alone. Use the "border-style" property to set the borders first.</p>
 
 </body>
 </html>
+<!--
 ### Specific Side Colors
 The `border-color` property can have from one to four values (for the top border, right border, bottom border, and the left border).   
   
