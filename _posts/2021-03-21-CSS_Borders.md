@@ -128,19 +128,15 @@ p.six {
 </style>
 </head>
 <body>
-
 <p>This property specifies the width of the four borders:</p>
-
 <p class="one">Some text.</p>
 <p class="two">Some text.</p>
 <p class="three">Some text.</p>
 <p class="four">Some text.</p>
 <p class="five">Some text.</p>
 <p class="six">Some text.</p>
-
 <p><b>Note:</b> The `border-width` property does not work if it is used alone. 
 Always specify the "border-style" property to set the borders first.</p>
-
 </body>
 </html> 
 ```css
@@ -442,93 +438,94 @@ p.round3 {
 </body>
 </html>
 ### All CSS Border Properties
-<table class="w3-table-all notranslate">
+<table>
   <tbody><tr>
     <th style="width:25%">Property</th>
     <th>Description</th>
   </tr>
   <tr>
-    <td><a href="/cssref/pr_border.asp">border</a></td>
+    <td>border</td>
     <td>Sets all the border properties in one declaration</td>
   </tr>
   <tr>
-    <td><a href="/cssref/pr_border-bottom.asp">border-bottom</a></td>
+    <td>border-bottom</td>
     <td>Sets all the bottom border properties in one declaration</td>
   </tr>
   <tr>
-    <td><a href="/cssref/pr_border-bottom_color.asp">border-bottom-color</a></td>
+    <td>border-bottom-color</td>
     <td>Sets the color of the bottom border</td>
   </tr>
   <tr>
-    <td><a href="/cssref/pr_border-bottom_style.asp">border-bottom-style</a></td>
+    <td>border-bottom-style</td>
     <td>Sets the style of the bottom border</td>
   </tr>
   <tr>
-    <td><a href="/cssref/pr_border-bottom_width.asp">border-bottom-width</a></td>
+    <td>border-bottom-width</td>
     <td>Sets the width of the bottom border</td>
   </tr>
   <tr>
-    <td><a href="/cssref/pr_border-color.asp">border-color</a></td>
+    <td>border-color</td>
     <td>Sets the color of the four borders</td>
   </tr>
   <tr>
-    <td><a href="/cssref/pr_border-left.asp">border-left</a></td>
+    <td>border-left</td>
     <td>Sets all the left border properties in one declaration</td>
   </tr>
   <tr>
-    <td><a href="/cssref/pr_border-left_color.asp">border-left-color</a></td>
+    <td>border-left-color</td>
     <td>Sets the color of the left border</td>
   </tr>
   <tr>
-    <td><a href="/cssref/pr_border-left_style.asp">border-left-style</a></td>
+    <td>border-left-style</td>
     <td>Sets the style of the left border</td>
   </tr>
   <tr>
-    <td><a href="/cssref/pr_border-left_width.asp">border-left-width</a></td>
+    <td>border-left-width</td>
     <td>Sets the width of the left border</td>
   </tr>
   <tr>
-    <td><a href="/cssref/css3_pr_border-radius.asp">border-radius</a></td>
+    <td>border-radius</td>
     <td>Sets all the four border-*-radius properties for rounded corners</td>
   </tr>
   <tr>
-    <td><a href="/cssref/pr_border-right.asp">border-right</a></td>
+    <td>border-right</td>
     <td>Sets all the right border properties in one declaration</td>
   </tr>
   <tr>
-    <td><a href="/cssref/pr_border-right_color.asp">border-right-color</a></td>
+    <td>border-right-color</td>
     <td>Sets the color of the right border</td>
   </tr>
   <tr>
-    <td><a href="/cssref/pr_border-right_style.asp">border-right-style</a></td>
+    <td>border-right-style</td>
     <td>Sets the style of the right border</td>
   </tr>
   <tr>
-    <td><a href="/cssref/pr_border-right_width.asp">border-right-width</a></td>
+    <td>border-right-width</td>
     <td>Sets the width of the right border</td>
   </tr>
   <tr>
-    <td><a href="/cssref/pr_border-style.asp">border-style</a></td>
+    <td>border-style</td>
     <td>Sets the style of the four borders</td>
   </tr>
   <tr>
-    <td><a href="/cssref/pr_border-top.asp">border-top</a></td>
+    <td>border-top</td>
     <td>Sets all the top border properties in one declaration</td>
   </tr>
   <tr>
-    <td><a href="/cssref/pr_border-top_color.asp">border-top-color</a></td>
+    <td>border-top-color</td>
     <td>Sets the color of the top border</td>
   </tr>
   <tr>
-    <td><a href="/cssref/pr_border-top_style.asp">border-top-style</a></td>
+    <td>border-top-style</td>
     <td>Sets the style of the top border</td>
   </tr>
   <tr>
-    <td><a href="/cssref/pr_border-top_width.asp">border-top-width</a></td>
+    <td>border-top-width</td>
     <td>Sets the width of the top border</td>
   </tr>
   <tr>
-    <td><a href="/cssref/pr_border-width.asp">border-width</a></td>
+    <td>border-width</td>
     <td>Sets the width of the four borders</td>
   </tr>
-</tbody></table>
+</tbody>
+</table>
