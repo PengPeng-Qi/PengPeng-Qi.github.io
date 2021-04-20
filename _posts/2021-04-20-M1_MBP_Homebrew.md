@@ -1,4 +1,3 @@
-2021-04-20-M1_MBP_Homebrew.md
 ---
 layout:     post
 title:      记录在MacBookPro M1 安装Homebrew 的一些问题
