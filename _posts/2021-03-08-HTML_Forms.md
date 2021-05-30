@@ -22,20 +22,6 @@ form elements
  .
 </form>
 ```
-<p>The HTML <code>&lt;form&gt;</code> element can contain one or more of the following form elements:</p>
-<ul>
-<li> <code>&lt;input&gt;</code></li>
-  <li> <code>&lt;label&gt;</code></li>
-  <li> <code>&lt;select&gt;</code></li>
-<li> <code>&lt;textarea&gt;</code></li>
-<li> <code>&lt;button&gt;</code></li>
-<li> <code>&lt;fieldset&gt;</code></li>
-  <li> <code>&lt;legend&gt;</code></li>
-  <li> <code>&lt;datalist&gt;</code></li>
-  <li> <code>&lt;output&gt;</code></li>
-<li> <code>&lt;option&gt;</code></li>
-<li> <code>&lt;optgroup&gt;</code></li>
-</ul>
 ### <code>input</code> 元素
 `<input>` 元素有很多形态，根据不同的 type 属性。  
   
@@ -175,9 +161,11 @@ The `<legend>` element defines a caption for the `<fieldset>` element.
 </form>  
 
 ### <code>datalist</code> 元素
-The `<datalist>` element specifies a list of pre-defined options for an `<input>` element.  
+`<datalist>` 元素为 `<input>` 元素规定预定义选项列表.  
   
-The list attribute of the `<input>` element, must refer to the `id` attribute of the `<datalist>` element.
+用户会在他们输入数据时看到预定义选项的下拉列表。
+  
+`<input>` 元素的 list 属性必须引用 `<datalist>` 元素的 id 属性。
 ```html
 <form action="/action_page.php">
   <input list="browsers">
@@ -190,7 +178,6 @@ The list attribute of the `<input>` element, must refer to the `id` attribute of
   </datalist>
 </form>  
 ```  
-<!--
 <form action="/action_page.php">
   <input list="browsers">
   <datalist id="browsers">
@@ -201,7 +188,7 @@ The list attribute of the `<input>` element, must refer to the `id` attribute of
     <option value="Safari">
   </datalist>
 </form>  
--->
+
 ### <code>button</code> 元素
 `<button>` 元素定义可点击的按钮：
 ```html
@@ -309,6 +296,8 @@ The <code>action</code> attribute defines the action to be performed when the fo
   <input type="text" id="lname" name="lname" value="Doe"><br><br>
   <input type="submit" value="Submit">
 </form>
+<br />
+
 > Tip: If the action attribute is omitted(省略), the action is set to the current page.
 
 ### The Target Attribute
@@ -322,31 +311,32 @@ The <code>action</code> attribute defines the action to be performed when the fo
   </tr>  
   <tr>
     <td>_blank</td>
-    <td>The response is displayed in a new window or tab</td>
+    <td>显示在新窗口或选项卡中</td>
   </tr>
   <tr>
     <td>_self</td>
-    <td>The response is displayed in the current window</td>
+    <td>显示在当前窗口</td>
   </tr>
   <tr>
     <td>_parent</td>
-    <td>The response is displayed in the parent frame</td>
+    <td>显示在父框架中</td>
   </tr>
   <tr>
     <td>_top</td>
-    <td>The response is displayed in the full body of the window</td>
+    <td>显示在窗口的整个 body 中</td>
   </tr>
   <tr>
     <td><i>framename</i></td>
-    <td>The response is displayed in a named iframe</td>
+    <td>响应显示在命名的iframe 中</td>
   </tr>
   </tbody>
 </table>  
 
+> 默认值为`_self`
 ```html
-<form action="/action_page.php" method="get">
+<form action="/action_page.php" target="_blank">
 ```
-### The Method Attribute
+### Method 属性
 该`method`属性指定提交表单数据时要使用的HTTP方法。  
   
 表单数据可以作为URL变量（带有`method="get"`）或作为HTTP发布交易记录（带有`method="post"`）发送。  
@@ -371,125 +361,37 @@ The <code>action</code> attribute defines the action to be performed when the fo
   
 > 如果表单数据包含敏感信息或个人信息，请始终使用POST！
 
-### The Autocomplete Attribute
+### Autocomplete 属性
 该`autocomplete`属性指定表单是应该打开还是关闭自动完成功能。  
   
 启用自动完成功能后，浏览器会根据用户之前输入的值自动完成值。  
 ```html
 <form action="/action_page.php" autocomplete="on">
 ```
-### The Novalidate Attribute
-The `novalidate` attribute is a boolean attribute.  
+### Novalidate 属性
+这个 `novalidate` 属性是一个布尔属性。  
   
-When present, it specifies that the form-data (input) should not be validated when submitted.  
-```html
-<form action="/action_page.php" novalidate>
-```
-### Others Attribute
-<table>
-  <tbody><tr>
-    <th style="width:20%">Attribute</th>
-    <th style="width:37%">Value</th>
-    <th style="width:43%">Description</th>
-  </tr>
-  <tr>
-    <td>accept-charset</td>
-    <td><i>character_set</i></td>
-    <td>Specifies the character encodings that are to be used for the form submission</td>
-  </tr>
-  <tr>
-    <td>action</td>
-    <td><i>URL</i></td>
-    <td>Specifies where to send the form-data when a form is submitted</td>
-  </tr>
-  <tr>
-    <td>autocomplete</td>
-    <td>on<br>off</td>
-    <td>Specifies whether a form should have autocomplete on or off</td>
-  </tr>
-  <tr>
-    <td>enctype</td>
-    <td>application/x-www-form-urlencoded<br>
- multipart/form-data<br>
- text/plain</td>
-    <td>Specifies how the form-data should be encoded when submitting it to the server (only for method="post")</td>
-  </tr>
-  <tr>
-    <td>method</td>
-    <td>get<br>
-      post</td>
-    <td>Specifies the HTTP method to use when sending form-data</td>
-  </tr>
-  <tr>
-    <td>name</td>
-    <td><i>text</i></td>
-    <td>Specifies the name of a form</td>
-  </tr>
-  <tr>
-    <td>novalidate</td>
-    <td>novalidate</td>
-    <td>Specifies that the form should not be validated when submitted</td>
-  </tr>
-  <tr>
-    <td>rel</td>
-    <td>external<br>help<br>license<br>next<br>nofollow<br>noopener<br>
-    noreferrer<br>opener<br>prev<br>search</td>
-    <td>Specifies the relationship between a linked resource and the current 
-    document</td>
-  </tr>
-  <tr>
-    <td>target</td>
-    <td>_blank<br>
-      _self<br>
-      _parent<br>
-      _top</td>
-    <td>Specifies where to display the response that is received after submitting the form</td>
-  </tr>
-</tbody></table>  
-更多详情请[见](https://www.w3schools.com/tags/tag_form.asp)  
-  
+如果已设置，它规定提交时不应验证表单数据。  
 ## <a name="HTML_Input_Types">HTML Input 类型
-<ul>
-  <li><code>&lt;input type="button"&gt;</code></li>
-  <li><code>&lt;input type="checkbox"&gt;</code></li>
-  <li><code>&lt;input type="color"&gt;</code></li>
-  <li><code>&lt;input type="date"&gt;</code></li>
-  <li><code>&lt;input type="datetime-local"&gt;</code></li>
-  <li><code>&lt;input type="email"&gt;</code></li>
-  <li><code>&lt;input type="file"&gt;</code></li>
-  <li><code>&lt;input type="hidden"&gt;</code></li>
-  <li><code>&lt;input type="image"&gt;</code></li>
-  <li><code>&lt;input type="month"&gt;</code></li>
-  <li><code>&lt;input type="number"&gt;</code></li>
-  <li><code>&lt;input type="password"&gt;</code></li>
-  <li><code>&lt;input type="radio"&gt;</code></li>
-  <li><code>&lt;input type="range"&gt;</code></li>
-  <li><code>&lt;input type="reset"&gt;</code></li>
-  <li><code>&lt;input type="search"&gt;</code></li>
-  <li><code>&lt;input type="submit"&gt;</code></li>
-  <li><code>&lt;input type="tel"&gt;</code></li>
-  <li><code>&lt;input type="text"&gt;</code></li>
-  <li><code>&lt;input type="time"&gt;</code></li>
-  <li><code>&lt;input type="url"&gt;</code></li>
-  <li><code>&lt;input type="week"&gt;</code></li>
-</ul>  
-详情请[见](https://www.w3schools.com/html/html_form_input_types.asp)  
 ### Input Type Text
-`<input type="text">` defines a single-line text input field:  
+`<input type="text">` 定义了**文本输入**的单行输入字段：
 ```html
 <form>
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname">
-</form>
+ First name:<br>
+<input type="text" name="firstname"><br>
+ Last name:<br>
+<input type="text" name="lastname">
+</form> 
 ```
 <form>
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname">
-</form>
+ First name:<br>
+<input type="text" name="firstname"><br>
+ Last name:<br>
+<input type="text" name="lastname">
+</form> 
+<br>
+
+> 文本默认的字段是20 个字符
 ### Input Type Password
 `<input type="password">` defines a password field:  
 ```html
@@ -509,20 +411,22 @@ When present, it specifies that the form-data (input) should not be validated wh
 ### Input Type Submit
 `<input type="submit">` defines a button for submitting form data to a form-handler.  
 ```html
-<form action="/action_page.php">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br><br>
-  <input type="submit" value="Submit">
-</form>
+<form action="action_page.php">
+First name:<br />
+<input type="text" name="firstname" value="Mickey"><br />
+Last name:<br />
+<input type="text" name="lastname" value="Mouse"><br />
+<br />
+<input type="submit" value="Submit">
+</form> 
 ```
-<form action="/action_page.php">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br><br>
-  <input type="submit" value="Submit">
+<form action="action_page.php">
+First name:<br />
+<input type="text" name="firstname" value="Mickey"><br />
+Last name:<br />
+<input type="text" name="lastname" value="Mouse"><br />
+<br />
+<input type="submit" value="Submit">
 </form>
 ### Input Type Reset
 `<input type="reset">` defines a reset button that will reset all form values to their default values:  
@@ -547,25 +451,16 @@ When present, it specifies that the form-data (input) should not be validated wh
 ### Radio Buttons
 The `<input type="radio">` defines a radio button.
 ```html
-<form action="/action_page.php">
-  <label for="male">Male</label>
-  <input type="radio" name="gender" id="male" value="male"><br>
-  <label for="female">Female</label>
-  <input type="radio" name="gender" id="female" value="female"><br>
-  <label for="other">Other</label>
-  <input type="radio" name="gender" id="other" value="other"><br><br>
-  <input type="submit" value="Submit">
-</form>
+<form>
+<input type="radio" name="sex" value="male" checked>Male<br />
+<input type="radio" name="sex" value="female">Female
+</form> 
 ```
-<form action="/action_page.php">
-  <label for="male">Male</label>
-  <input type="radio" name="gender" id="male" value="male"><br>
-  <label for="female">Female</label>
-  <input type="radio" name="gender" id="female" value="female"><br>
-  <label for="other">Other</label>
-  <input type="radio" name="gender" id="other" value="other"><br><br>
-  <input type="submit" value="Submit">
-</form>
+<form>
+<input type="radio" name="sex" value="male" checked>Male
+<br>
+<input type="radio" name="sex" value="female">Female
+</form> 
 
 ### Checkboxes
 The `<input type="checkbox">` defines a checkbox.
