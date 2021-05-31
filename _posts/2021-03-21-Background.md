@@ -11,10 +11,10 @@ tags:
     - Background
     - Notes
 ---
-## CSS Background
+
 ### CSS 优先级
 一般情况下，优先级如下：  
-<b>（内联样式）Inline style > （内部样式）Internal style sheet >（外部样式）External style sheet > 浏览器默认样式</b>  
+<b>（内联样式）Inline style > （内部样式）Internal style sheet /（外部样式）External style sheet > 浏览器默认样式</b>  
   
 如果外部样式放在内部样式的后面，则外部样式将覆盖内部样式。  
 ### CSS 属性
@@ -30,7 +30,7 @@ CSS 属性定义背景效果:
 ### Opacity / Transparency
 Opacity（不透明） / Transparency（透明度）（文本加背景的透明度）  
   
-The <b>opacity</b> property specifies the opacity/transparency of an element. It can take a value from 0.0 - 1.0. The lower value, the more transparent:  
+`opacity` 属性指定元素的不透明度/透明度。取值范围为 0.0 - 1.0。值越低，越透明：
   
 ```css
 div {
@@ -38,24 +38,23 @@ div {
     opacity: 0.3;
 }
 ```
-### Transparency using RGBA
-If you do not want to apply opacity to child elements, like in our example above, use <b>RGBA</b> color values. The following example sets the opacity for the background color and not the text:  
-  
+
+### 使用 RGBA 透明度
 ```css
 div {
     background: rgba(0, 128, 0, 0.3) /* Green background with 30% opacity */
 }
 ```
+
 ### CSS Background Image
 ```css
 body {
     background-image: url("paper.gif");
 }
 ```
+
 ### repeat 属性 
-  
-如果图像只在水平方向平铺 (repeat-x), 页面背景会更好些：  
-  
+如果图像只在水平方向平铺 (`repeat-x`), 页面背景会更好些：  
 ```css
 body {
     background-image:url('gradient2.png');
@@ -75,7 +74,8 @@ body {
     background-position:right top;
 }    
 ```
-### CSS Background Attachment
+### background-attachment 属性
+`background-attachment` 属性指定背景图像是应该滚动(scroll)还是固定(fixed)的（不会随页面的其余部分一起滚动）：
 ```css
 body {
     background-image: url("img_tree.png");
@@ -84,7 +84,6 @@ body {
     background-attachment: scroll;
 }
 ```
-更多例子可[见](https://developer.mozilla.org/zh-CN/docs/Web/CSS/background-attachment)  
 <hr>
 取值：
 <dl>
@@ -95,7 +94,8 @@ body {
  <dt><code>scroll</code></dt>
  <dd>   此关键属性值表示背景相对于元素本身固定， 而不是随着它的内容滚动（对元素边框是有效的）。</dd>
 </dl>
-### CSS Background Shorthand
+
+### 背景简写
 ```css
 body {
     background:#ffffff url('img_tree.png') no-repeat right top;
