@@ -40,6 +40,7 @@ div {
 ```
 
 ### 使用 RGBA 透明度
+  
 ```css
 div {
     background: rgba(0, 128, 0, 0.3) /* Green background with 30% opacity */
@@ -96,6 +97,7 @@ body {
 </dl>
 
 ### 背景简写
+  
 ```css
 body {
     background:#ffffff url('img_tree.png') no-repeat right top;
