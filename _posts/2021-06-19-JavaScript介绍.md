@@ -1,3 +1,15 @@
+---
+layout:     post
+title:      JavaScript介绍
+date:       2021-06-19
+author:     PengPengQi
+header-img: img/BackGround.png
+catalog: true
+tags:
+    - JavaScript
+    - Notes
+---
+
 ## JavaScript
 JavaScript是一门运行在客户端的**脚本语言**。
   
