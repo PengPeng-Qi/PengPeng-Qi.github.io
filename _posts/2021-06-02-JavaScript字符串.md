@@ -155,6 +155,9 @@ var arr = txt.split(","); //用逗号分隔
 var arr1 = txt.split("");
 // arr1[1]:,
 ```
+## 转换为字符串
+<img src="../img/字符串转换.png" />
+
 ## 其他方法
 ### concat
 `concat()` **连接**两个或多个字符串：  
