@@ -1,0 +1,184 @@
+.main {
+  width: 980px;
+  height: 456px;
+  /* background-color: antiquewhite; */
+  margin-left: 220px;
+  margin-top: 8px;
+}
+.focus {
+  float: left;
+  width: 721px;
+  height: 455px;
+  /* background-color: rgb(163, 113, 39); */
+}
+.newsflash {
+  float: right;
+  width: 250px;
+  height: 455px;
+  /* background-color: rgb(71, 46, 14); */
+}
+.news {
+  border: 1px solid #e4e4e4;
+  height: 165px;
+  /* background-color: blueviolet; */
+}
+.news_hd {
+  line-height: 33px;
+  height: 33px;
+  padding: 0px 15px;
+  border-bottom: 1px dotted #e4e4e4;
+}
+.news_hd h5 {
+  float: left;
+  font-size: 14px;
+}
+.news_hd .more {
+  float: right;
+}
+.news_hd .more::after {
+  content: '\ea42';
+  font-family: 'icomoon';
+  /* padding-right: 15px; */
+}
+.news_bd {
+  padding: 5px 15px 0px;
+}
+.news_bd ul li {
+  float: none;
+  line-height: 24px;
+  /* width: 205px; */
+  height: 24px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.lifeservice {
+  height: 209px;
+  /* background-color: rgb(226, 150, 150); */
+  border: 1px solid #e4e4e4;
+  border-top: 0;
+  overflow: hidden;
+}
+.lifeservice ul {
+  width: 252px;
+}
+.lifeservice ul li{
+  width: 63px;
+  height: 71px;
+  border: 1px solid #e4e4e4;
+  border-top: 0px;
+  border-left: 0px;
+  text-align: center;
+}
+.lifeservice ul li .sprites {
+  width: 24px;
+  height: 28px;
+  background-color: azure;
+  margin: 12px auto 0px;
+  background: url(../images/icons.png) no-repeat -19px -15px;
+}
+.bargain img{
+  margin-top: 5px;
+}
+/* 推荐部分 */
+.recom {
+ height: 163px;
+ background-color: #ebebeb;
+ margin-top: 12px; 
+}
+.recom .recom_hd {
+  float: left;
+  height: 163px;
+  width: 205px;
+  text-align: center;
+  padding-top: 30px;
+  background-color: #5c5251;
+}
+/* .recom .recom_td {
+  clear: left;
+} */
+.recom .recom_td ul li {
+  position: relative;
+}
+.recom .recom_td ul li:nth-child(-n+3)::after {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 145px;
+  right: 0;
+  top: 10px;
+  background-color: rebeccapurple;
+}
+/* 家用电器部分 */
+.jiadian {
+  margin-top: 30px;
+}
+.mobile {
+  margin-top: 30px;
+}
+.floor_hd {
+  height: 30px;
+  border-bottom: 2px solid #c81623;
+}
+.floor_hd h3 {
+  float: left;
+  font-size: 18px;
+  color: #c81623;
+  font-weight: normal;
+}
+.floor_hd .tab-list ul {
+  float: right;
+  /* margin-bottom: 10px; */
+  line-height: 30px;
+}
+.floor_hd .tab-list ul li a {
+  padding: 0px 15px;
+}
+.floor_bd {
+  height: 361px;
+  /* background-color: antiquewhite; */
+}
+.tab_content .table_list_items>div {
+  float: left;
+}
+.col_210 {
+  width: 210px;
+}
+.col_329 {
+  width: 320px;
+}
+.col_221 {
+  width: 221px;
+  border-left: 1px solid #ccc;
+}
+.col_219 {
+  width: 219px;
+  border-left: 1px solid #ccc;
+}
+.floor_bd .box_01 {
+  text-align: center;
+  height: 100px;
+}
+.floor_bd .box_01 .box_list {
+  background-color: rgb(249, 249, 249);
+}
+.floor_bd .col_210 ul li {
+  float: left;
+  margin-left: 12px;
+  font: 12px;
+  text-align: center;
+  color: #666;
+  line-height: 33px;
+  width: 86px;
+  height: 33px;
+  border-bottom: 1px solid #ededed;
+}
+.floor_bd .col_210 .box_list img{
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+.bb {
+  /* a链接中一般有高度的元素则需要转换为块级元素 */
+  display: block;
+  border-bottom: 1px solid #ccc;
+}
