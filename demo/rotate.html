@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rotate</title>
+<style>
+  div {
+    position: relative;
+    margin: 100px auto;
+    width: 240px;
+    height: 35px;
+    border: 1px solid black;
+  }
+  div::after {
+    content: '';
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    width: 7px;
+    height: 7px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    transform: rotate(45deg);
+  }
+</style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>

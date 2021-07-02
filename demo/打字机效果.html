@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>打字机</title>
+  <style>
+    @keyframes keyborad {
+      0% {
+        width: 20px;
+      }
+
+      100% {
+        width: 240px;
+      }
+    }
+
+    div {
+      overflow: hidden;
+      margin: 100px auto;
+      width: 220px;
+      height: 30px;
+      background-color: transparent;
+      font-size: 20px;
+      animation: keyborad 3s steps(11) 0s infinite backwards;
+    }
+  </style>
+</head>
+
+<body>
+  <div>我终于完成了打字机效果</div>
+</body>
+
+</html>

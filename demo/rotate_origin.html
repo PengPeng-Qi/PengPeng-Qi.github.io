@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rotate_Origin</title>
+  <style>
+    body {
+      text-align: center;
+    }
+
+    body>div {
+      margin: 100px auto;
+      width: 200px;
+      height: 200px;
+      border: 1px solid #000;
+      transition: all 2s;
+    }
+
+    div[class^="center"] {
+      margin: 75px auto;
+      width: 50px;
+      height: 50px;
+      background-color: antiquewhite;
+      transition: all 2s;
+    }
+
+    .center_01:hover {
+      transform: rotate(180deg);
+
+    }
+    /* transform-origin需要写在父元素上面 */
+    .center_02 {
+      transform-origin: left bottom;
+    }
+
+    .center_02:hover {
+      transform: rotate(180deg);
+    }
+  </style>
+</head>
+
+<body>
+  中心旋转：请移动鼠标到小方块上面
+  <div>
+    <div class="center_01"></div>
+  </div>
+  左下角旋转
+  <div>
+    <div class="center_02"></div>
+  </div>
+</body>
+
+</html>

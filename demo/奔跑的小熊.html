@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>奔跑的小熊</title>
+  <style>
+    @keyframes run {
+      0% {
+        background-position: 0px 0px;
+      }
+      100% {
+        background-position: -1600px 0px;
+      }
+    }
+    @keyframes move {
+      0% {
+        transform: translate(-400px, 0px);
+      }
+      100% {
+        transform: translate(0px, 0px);
+      }
+    }
+    body {
+      background-color: #ccc;
+    }
+    div {
+      width: 200px;
+      height: 100px;
+      margin: 100px auto;
+      background: url(media/bear.png);
+      animation: run 0.5s steps(8) 0s infinite, move 3s linear 0s 1 forwards;
+      
+    }
+  </style>
+</head>
+<body>
+  <div>
+
+  </div>
+</body>
+</html>
