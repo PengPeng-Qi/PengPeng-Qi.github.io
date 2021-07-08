@@ -51,3 +51,5 @@ tags:
 浏览器弹出输入框，用户可以输入
 
 <img src="../img/prompt.png" alt="prompt效果显示" />
+
+> prompt取过来的值是字符型的

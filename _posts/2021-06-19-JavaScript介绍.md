@@ -13,7 +13,7 @@ tags:
 ## JavaScript
 JavaScript是一门运行在客户端的**脚本语言**。
   
-**脚本语言**：不需要编译，运行过程中由 js 解释器( js 引擎）逐行来进行解释并执行。
+**脚本语言**：不需要编译，运行过程中由 js 解释器( js 引擎）**逐行来进行解释并执行**。
   
 现在也可以基于 `Node.js` 技术进行服务器端编程
 
@@ -27,4 +27,8 @@ JavaScript是一门运行在客户端的**脚本语言**。
 > [百度统计](https://tongji.baidu.com/research/)可查看浏览器及流量的份额。
 
 ## JavaScript的组成
-ECMAScript、DOM、BOM
+ECMAScript、DOM(文档对象模型)、BOM(浏览器对象模型)
+
+## 注释
+多行注释默认快捷键：`shift + option + /`  
+单行注释默认快捷键：`command + /`
