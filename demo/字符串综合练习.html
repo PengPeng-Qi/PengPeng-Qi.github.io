@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>字符串综合练习</title>
+</head>
+
+<body>
+  <script>
+    var a = 'afhisgfeqwgfiyew78349326453t4djhfcvqgff';
+    // 字符串的长度
+    var aLength = a.length;
+    console.log(aLength);
+    // 取出指定位置的字符
+    var aLocation = a[4];
+    console.log(aLocation);
+    // 查询指定字符是否存在
+    var alive = a.indexOf('c');
+    console.log(alive);
+    // 替换指定的字符
+    var arep = a.replace('s', 'b');
+    console.log(arep);
+    // 截取指定开始位置到结束位置的字符串
+    var a5 = a.slice(3, 5);
+    console.log(a5);
+    // 找出以上字符串中出现次数最多的字符和出现的次数
+    var o = {};
+    for (var i = 0; i < aLength; i++) {
+      var a6 = a.charAt(i);
+      // console.log(a6);
+      if (o[a6]) {
+        o[a6]++;
+      } else {
+        o[a6] = 1;
+      }
+    }
+    var max = 0;
+    for (k in o) {
+      if (o[k] > max) {
+        max = o[k];
+        str = k;
+      }
+    }
+    console.log(max);
+    console.log('次数最多的字符是' + k);
+  </script>
+</body>
+
+</html>

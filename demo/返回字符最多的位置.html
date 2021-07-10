@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>返回字符最多的位置</title>
+</head>
+
+<body>
+  <script>
+    // 判断一个字符串'absfhsdhfofnsdckasgdfasa'中出现次数最多的字符，并统计次数
+    var str = 'absfhsdhfofnsdckasgdfasa';
+    var o = {};
+    var num = 0;
+    for (var i = 0; i < str.length; i++) {
+      var chars = str.charAt(i);
+      // chars 返回的是字符串
+      // 对象有两种形式 1. o.a 2. o['a'] 因为chars返回的是字符串，带有引号
+      // 所以不能使用o.chars相当于o.'a'和o['chars']相当于o[""a""]
+      // 又刚好字符串自带引号，所以使用o[chars]
+      if (o[chars]) {
+        o[chars]++;
+      } else {
+        o[chars] = 1;
+      }
+    }
+    console.log(o);
+
+    var max = 0;
+    var ch = '';
+    for (k in o) {
+      // k得到的是属性名
+      // o[k]得到的是属性值
+      if (o[k] > max) {
+        max = o[k];
+        ch = k;
+      }
+    }
+    console.log(max);  
+    console.log('最多的字符是' + ch);
+  </script>
+</body>
+
+</html>

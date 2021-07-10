@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>返回字符的位置</title>
+</head>
+<body>
+  <script>
+    // 查找字符串'abcoefsadhkaofdowo'中所以o出现的位置及次数
+    var str = 'oabcoefsadhkaofdowo';
+    var index = str.indexOf('o');
+    var num = 0;
+    // console.log(index);
+    while (index !== -1) {
+      console.log(index);
+      num++;
+      index = str.indexOf('o', index+1);
+    }
+    console.log('o出现的次数为' + num);
+  </script>
+</body>
+</html>

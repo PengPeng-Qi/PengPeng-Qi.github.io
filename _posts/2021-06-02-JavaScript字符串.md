@@ -105,10 +105,11 @@ var res = str.substr(7, 6);
 ```js
 str = "Please visit Microsoft!";
 var n = str.replace("Microsoft", "W3School");
+console.log(n); // Please visit w3School
 ```
 `replace()` 方法不会改变调用它的字符串，它返回的是新字符串  
   
-默认的，只替换首个匹配且对大小写敏感  
+默认的，**只替换首个匹配**且对大小写敏感  
   
 若需执行大小写不敏感的替换，请使用正则表达式`/i`(大小写不敏感)：
   
@@ -155,19 +156,22 @@ var arr = txt.split(","); //用逗号分隔
 var arr1 = txt.split("");
 // arr1[1]:,
 ```
+`join()`把数组转换为字符串
 ## 转换为字符串
 <img src="../img/字符串转换.png" />
 
 ## 其他方法
 ### concat
 `concat()` **连接**两个或多个字符串：  
-  
 ```js
 var text1 = "Hello";
 var text2 = "World";
 text3 = text1.concat(" ", text2);
 // text3:Hello World
 // concat()方法用于代替加法运算符
+
+var str = 'andy';
+console.log(str.concat('red')); // andyred
 ```
 ### trim
 `trim()` 方法删除字符串两端的空白符
