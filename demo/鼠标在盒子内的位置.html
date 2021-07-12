@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>鼠标在盒子内的位置</title>
+  <style>
+    div {
+      width: 200px;
+      height: 200px;
+      background-color: antiquewhite;
+      text-align: center;
+      margin: 100px auto;
+      font-size: 12px;
+      line-height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+  <script>
+    var div = document.querySelector('div');
+
+    div.addEventListener('mousemove', function(e) {
+      var x = e.pageX - this.offsetLeft;
+      var y = e.pageY - this.offsetTop;
+      div.innerHTML = '鼠标在盒子里的位置是（' + x + ', ' + y +')';
+    })
+  </script>
+</body>
+</html>

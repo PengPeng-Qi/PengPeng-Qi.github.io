@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3S自动跳转页面</title>
+</head>
+
+<body>
+  <div></div>
+  <script>
+    var div = document.querySelector('div');
+    var timer = 3;
+    fn();
+    setInterval(fn, 1000);
+    function fn() {
+        if (timer == 0) {
+          location.href = 'https://pengpeng-qi.github.io/2021/07/10/WebAPIs%E9%98%B6%E6%AE%B5%E5%AD%A6%E4%B9%A0/';
+        } else {
+          div.innerHTML = '还有' + timer + '秒返回刚才的页面';
+          timer--;
+        }
+      };
+  </script>
+</body>
+
+</html>
