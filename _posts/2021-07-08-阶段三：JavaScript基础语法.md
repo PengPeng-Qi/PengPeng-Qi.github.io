@@ -9,16 +9,6 @@ tags:
     - JavaScript
     - Notes
 ---
-#### 计算机编程基础
-可见[计算机编程基础](/2021/06/18/计算机编程基础/)
-#### JavaScript介绍
-可见[JavaScript介绍](/2021/06/19/JavaScript介绍/)
-#### JavaScript输出
-可见[JavaScript输出](/2021/06/02/JavaScript输出/)
-#### JavaScript数字型
-可见[JavaScript数字型](/2021/06/02/数字/)
-#### JavaScript字符串
-可见[JavaScript字符串](/2021/06/02/JavaScript字符串/)
 #### 逻辑中断运算符
 ##### 逻辑与短路运算
 如果表达式1为真，则返回表达式2，如果表达式1为假，那么返回表达式1.
@@ -481,3 +471,9 @@ console.log(p.name); // 1. 这个输出什么 ? 刘德华
 f1(p);
 console.log(p.name); // 4. 这个输出什么 ? 张学友
 ```
+更多可见：
+- [计算机编程基础](/2021/06/18/计算机编程基础/)  
+- [JavaScript介绍](/2021/06/19/JavaScript介绍/)  
+- [JavaScript输出](/2021/06/02/JavaScript输出/)  
+- [JavaScript数字型](/2021/06/02/数字/)  
+- [JavaScript字符串](/2021/06/02/JavaScript字符串/)  
