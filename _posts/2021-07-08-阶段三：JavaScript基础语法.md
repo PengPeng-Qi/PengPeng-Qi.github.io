@@ -193,17 +193,22 @@ obj.sayHi = function() {
 // new 构造函数名();
 
 function Star(uname, age, sex) {
+  // this.name称为实例成员，通过this添加的成员，实例成员只能实例化的对象(ldh)来访问
   this.name = uname;
   this.age = age;
   this.sex = sex;
   this.sing = function(song) {
-    console.log(so ng);
+    console.log(song);
   }
 }
 var ldh = new Star('刘德华', 18, '男');
 ldh.sing('冰雨');
 console.log(typeof ldh); // Object
 console.log(ldh.name);
+
+// 在构造函数本身上添加的成员，hobby就称为静态成员
+// 静态成员只能通过构造函数来访问Star.hobby
+Star.hobby = '打球';
 ```
 > 1.构造函数名首字母要大些  
 > 2.构造函数不需要return，就可以返回结果  
