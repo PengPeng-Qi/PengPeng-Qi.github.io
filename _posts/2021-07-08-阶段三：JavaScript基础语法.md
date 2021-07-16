@@ -137,9 +137,10 @@ function f1() {
 // 相当于以下操作
 function f1() {
   var a = 9; // 局部变量
+  a = 10; // 重新赋值，依然是局部变量
   b = 9; // 全局变量
   c = 9; // 全局变量
-  console.log(a); // 9
+  console.log(a); // 10
   console.log(b); // 9
   console.log(c); // 9
 }
@@ -310,7 +311,7 @@ Math.round(-1.5); // -1 往大了取
 Math.round(-1.1); // -1
 Math.round(-1.9); // -2 
 ```
-**随即数方法**：
+**随机数方法**：
 ```js
 // random()返回一个随机的小数，0 <= x < 1, 不跟参数
 console.log(Math.random());
