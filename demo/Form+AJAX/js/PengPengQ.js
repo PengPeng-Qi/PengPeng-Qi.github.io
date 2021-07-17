@@ -8,6 +8,7 @@ function resolveData(data) {
   return arr.join('&');
 }
 
+// xhr五个步骤
 function PengPengQ(option){
   var xhr = new XMLHttpRequest();
 
