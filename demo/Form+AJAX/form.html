@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="js/jquery.js"></script>
+  <script src="js/PengPengQ.js"></script>
+</head>
+
+<body>
+  <form action="" id="form1">
+    <input type="text" name="shuju" id="">
+    <button type="submit">提交</button>
+  </form>
+  <script>
+    /*     $(function () {
+          // 表单事件监听方式一
+          // $('#form1').submit(function () {
+          //   alert('我监听到了form表单')
+          // })
+    
+          // 阻止表单默认提交方式一
+          // $('#form1').submit(function (e) {
+          //   e.preventDefault();
+          //   console.log('阻止了表单的默认提交行为')
+          // })
+    
+          $('#form1').on('submit', function (e) {
+            // alert('我监听到了form表单')
+            e.preventDefault();
+            var data = $(this).serialize();
+            console.log(data);
+          })
+    
+          // 阻止表单默认提交方式二
+          // $('#form1').on('submit', function(e){
+          //   e.preventDefault();
+          //   console.log('我也阻止了事件提交');
+          // })
+        }) */
+
+    // var xhr = new XMLHttpRequest();
+
+    // xhr.open('GET', 'http://www.liulongbin.top:3006/api/getbooks');
+    // xhr.send();
+
+    // xhr.onreadystatechange = function() {
+    //   if (xhr.readyState == 4 && xhr.status == 200) {
+    //     console.log(xhr.response);
+    //   }
+    // }
+
+    // console.log(encodeURI('碰碰漆'));
+    // // %E7%A2%B0%E7%A2%B0%E6%BC%86
+    // console.log(decodeURI('%E7%A2%B0'));
+    // // 碰    
+
+    // post请求
+    // var xhr = new XMLHttpRequest();
+    // xhr.open('POST', 'http://www.liulongbin.top:3006/api/addbook');
+    // xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    // xhr.send('bookname=水浒传&author=施耐庵&publisher=四川出版社')
+    // xhr.onreadystatechange = function() {
+    //   if (xhr.readyState == 4 && xhr.status == 200) {
+    //     console.log(xhr.responseText);
+    //   }
+    // }
+
+    // GTE测试
+    // PengPengQ({
+    //   method: 'GET',
+    //   url: 'http://www.liulongbin.top:3006/api/getbooks',
+    //   data: {
+    //     id: 1
+    //   },
+    //   success: function(res){
+    //     console.log(res);
+    //   }
+    // })
+
+    // POST测试
+    PengPengQ({
+      method: 'POST',
+      url: 'http://www.liulongbin.top:3006/api/addbook',
+      data: {
+        bookname: '杀破狼',
+        author: '吴京',
+        publisher: '吹牛出版社'
+      },
+      success: function(res){
+        console.log(res);
+      }
+    })
+  </script>
+</body>
+
+</html>
