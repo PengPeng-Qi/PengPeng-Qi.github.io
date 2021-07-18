@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="js/jquery.js"></script>
+</head>
+
+<body>
+  <div class="title"></div>
+  <div class="name">姓名：<span class="uname"></span></div>
+  <div class="age">年龄：<span class="uage"></span></div>
+  <div class="isVip">会员<span class="uisVip"></span></div>
+  <div class="regTime">注册时间：<span class="uregTime"></span></div>
+  <div>
+    <ul class="hobby">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+    </ul>
+  </div>
+  <script>
+    var data = {
+      title: '<h3>用户信息</h3>',
+      name: 'zs',
+      age: 20,
+      isVIP: true,
+      regTime: new Date(),
+      hobby: ['吃饭', '睡觉', '打豆豆']
+    }
+
+    $(function () {
+      $('.title').html(data.title);
+      $('.uname').html(data.name);
+      $('.uage').html(data.age);
+      $('.uisVip').html(data.isVIP);
+      $('.uregTime').html(data.regTime);
+      // $('.hobby').html(data.hobby);
+
+      var arr = [];
+      $.each(data.hobby, function(i, item){
+        var li = '<li>' + item + '</li>';
+        arr.push(li);
+        // console.log(arr);
+      })
+      arr.join('');
+      // console.log(arr);
+      $('.hobby').html(arr);
+    })
+  </script>
+</body>
+
+</html>
